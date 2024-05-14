@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.orangeHRM.pages.LoginPage;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -20,6 +22,7 @@ public class BaseClass {
 	
 	 public WebDriver driver;
 	 public String browser = "chrome";
+	 //public LoginPage loginpage;
 
 	@BeforeMethod
 	public void setup() {
@@ -45,6 +48,7 @@ public class BaseClass {
 	        // Navigate to a website
 	        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	        //loginpage = new LoginPage(driver);
 	}
 	
 	@AfterMethod

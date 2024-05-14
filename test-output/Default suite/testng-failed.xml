@@ -5,7 +5,7 @@
     <classes>
       <class name="com.orangeHRM.tests.LoginTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="verifyLogo"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
