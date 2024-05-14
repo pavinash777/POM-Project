@@ -21,8 +21,5 @@ public class HomePage extends BaseClass{
 	public HomePage() {
 		
 	}
-	public SystemUserPage clickOnAdminTab() {
-		driver.findElement(adminelement).click();
-		return new SystemUserPage();
-	}
+	
 }
