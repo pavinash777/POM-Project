@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.orangeHRM.base.BaseClass;
+import com.orangeHRM.pages.HomePage;
 import com.orangeHRM.pages.LoginPage;
 
 /**
@@ -15,6 +16,7 @@ import com.orangeHRM.pages.LoginPage;
 public class LoginTest extends BaseClass{
 
 	LoginPage loginpage;
+	HomePage homepage;
 	
 	
 	/*@Test
